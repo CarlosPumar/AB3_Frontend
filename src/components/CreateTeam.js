@@ -4,7 +4,7 @@ import useAuth from "../auth/useAuth";
 
 export function CreateTeam() {
   const auth = useAuth();
-  const [details, setDetails] = useState({ name: "" });
+  const [details, setDetails] = useState({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export function CreateTeam() {
       },
       body: body,
     });
-    const url_redirect = "http://localhost:3000/team/";
+    const url_redirect = "http://ab3.es/team/";
     window.location.replace(url_redirect);
   };
 
