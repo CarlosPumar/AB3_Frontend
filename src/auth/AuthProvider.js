@@ -86,7 +86,7 @@ const AuthProvider = ({ children }) => {
         if (response.status === 401) {
           throw new Unauthorized();
         } else if (response.status === 404) {
-          window.location.replace("http://localhost:3000/notFound");
+          window.location.replace(url_const + "notFound");
         } else {
           return response;
         }
@@ -121,8 +121,9 @@ const AuthProvider = ({ children }) => {
             return response;
           }
         } catch (error) {
-          console.log(error);
-          window.location.replace("http://localhost:3000/login");
+          setToken(null);
+          setUser(null);
+          window.location.replace(url_const + "login");
         }
       }
     },
