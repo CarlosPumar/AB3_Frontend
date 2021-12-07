@@ -24,7 +24,7 @@ export function CreateTeam() {
       },
       body: body,
     });
-    const url_redirect = "http://ab3.es/team/";
+    const url_redirect = auth.url_const + "team/";
     window.location.replace(url_redirect);
   };
 

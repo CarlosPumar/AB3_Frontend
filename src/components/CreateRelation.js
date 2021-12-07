@@ -68,7 +68,7 @@ export function CreateRelation({ player }) {
       body: body,
     });
 
-    const url_redirect = "http://localhost:3000/player/" + player.id;
+    const url_redirect = auth.url_const + "player/" + player.id;
     window.location.replace(url_redirect);
   };
 

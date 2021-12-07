@@ -80,7 +80,7 @@ export function CreatePlayer({ id_team }) {
       body: body,
     });
 
-    const url_redirect = "http://localhost:3000/team/" + id_team;
+    const url_redirect = auth.url_const + "team/" + id_team;
     window.location.replace(url_redirect);
   };
 
