@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Player } from "../components/Player";
 import { DeletePlayerButton } from "../components/DeletePlayerButton";
 import { CreateRelation } from "../components/CreateRelation";
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react/cjs/react.development";
 import useAuth from "../auth/useAuth";
 
 export default function PlayerPage() {
